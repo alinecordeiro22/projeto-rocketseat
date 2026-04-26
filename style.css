@@ -26,6 +26,9 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
+
+  /* vh = viewport height (altura da tela) - faz com que a imagem de fundo acompanhe a altura total disponível e não apenas a altura do body (conteúdo que tiver na minha página). */
 }
 
 body * {
@@ -165,4 +168,18 @@ footer {
   padding: 24px 0;
   text-align: center;
   font-size: 14px;
+}
+
+/* media queries - adaptar o layout do site para diferentes tamanhos de tela e dispositivos.*/
+
+/* @ = comando especial do CSS - Serve pra coisas como responsividade, importação, fontes, animações, etc. */
+
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg);
+  }
 }
