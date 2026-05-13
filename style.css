@@ -50,6 +50,8 @@ body * {
 
 #profile img {
   width: 112px;
+  height: 112px;
+  object-fit: cover;
 }
 
 #profile p {
